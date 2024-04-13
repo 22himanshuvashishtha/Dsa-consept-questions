@@ -12,11 +12,11 @@ void search(vector<int>& v,int t){
 			cout<<mid;
 			break;
 			}
-		if(v[mid-1]==t){
+		if(mid-1>0 && v[mid-1]==t){
 			cout<<mid-1;
 			break;
 		}
-		if(v[mid+1]==t){
+		if(mid+1>v.size() && v[mid+1]==t){
 			cout<<mid+1;
 			break;
 		}
